@@ -6,8 +6,9 @@
  * implementations of `debug()`.
  */
 import humanize from 'ms'
+import type { Debug, Debugger } from './index.js'
 
-export default function setup (env: any): any {
+export default function setup (env: any): Debug {
   createDebug.debug = createDebug
   createDebug.default = createDebug
   createDebug.coerce = coerce
@@ -61,7 +62,7 @@ export default function setup (env: any): any {
    * @param {string} namespace
    * @returns {Function}
    */
-  function createDebug (namespace: string): any {
+  function createDebug (namespace: string): Debugger {
     let prevTime: any
     let enableOverride: any = null
     let namespacesCache: any
@@ -156,6 +157,7 @@ export default function setup (env: any): any {
       createDebug.init(debug)
     }
 
+    // @ts-expect-error some properties are added dynamically
     return debug
   }
 
@@ -276,5 +278,6 @@ export default function setup (env: any): any {
   // @ts-expect-error load is not in the types
   createDebug.enable(createDebug.load())
 
+  // @ts-expect-error some properties are added dynamically
   return createDebug
 }
