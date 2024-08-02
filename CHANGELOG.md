@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/achingbrain/weald/compare/v1.0.0...v1.0.1) (2024-08-02)
+
+### Bug Fixes
+
+* browser imports ([1d014e1](https://github.com/achingbrain/weald/commit/1d014e1bb7c52d7d0c55672e9d5973f176a40f3f))
+
 ## 1.0.0 (2024-08-02)
 
 ### Features
