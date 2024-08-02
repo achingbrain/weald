@@ -149,12 +149,10 @@
     "aegir": "^44.0.1"
   },
   "browser": {
-    "./dist/src/index.js": "./dist/src/browser.js",
-    "node:tty": false,
-    "node:util": false
+    "./dist/src/node.js": "./dist/src/browser.js"
   },
   "react-native": {
-    "./dist/src/index.js": "./dist/src/browser.js"
+    "./dist/src/node.js": "./dist/src/browser.js"
   },
   "sideEffects": false
 }
