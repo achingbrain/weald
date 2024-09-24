@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/achingbrain/weald/compare/v1.0.2...v1.0.3) (2024-09-24)
+
+### Bug Fixes
+
+* respect color env var ([f8874d7](https://github.com/achingbrain/weald/commit/f8874d735deb81d86de3445b9bd80be7f1c51830))
+
 ## [1.0.2](https://github.com/achingbrain/weald/compare/v1.0.1...v1.0.2) (2024-08-02)
 
 ### Bug Fixes
