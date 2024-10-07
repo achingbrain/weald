@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/achingbrain/weald/compare/v1.0.3...v1.0.4) (2024-10-07)
+
+### Bug Fixes
+
+* prefix process access in browser with globalThis ([#2](https://github.com/achingbrain/weald/issues/2)) ([c926a97](https://github.com/achingbrain/weald/commit/c926a97a1f3d56fdc5def3901224d71adf62783b))
+
 ## [1.0.3](https://github.com/achingbrain/weald/compare/v1.0.2...v1.0.3) (2024-09-24)
 
 ### Bug Fixes
