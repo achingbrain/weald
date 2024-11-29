@@ -146,7 +146,7 @@
     "supports-color": "^9.4.0"
   },
   "devDependencies": {
-    "aegir": "^44.0.1"
+    "aegir": "^45.0.7"
   },
   "browser": {
     "./dist/src/node.js": "./dist/src/browser.js"
