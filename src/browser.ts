@@ -6,7 +6,7 @@
 /**
  * This is the web browser implementation of `debug()`.
  */
-import humanize from 'ms'
+import * as humanize from 'ms'
 import setup from './common.js'
 
 const storage = localstorage()
