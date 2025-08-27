@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-/* eslint-disable @typescript-eslint/strict-boolean-expressions */
 
 /**
  * This is the common logic for both the Node.js and web browser

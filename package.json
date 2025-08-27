@@ -1,6 +1,6 @@
 {
   "name": "weald",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The debug module but TypeScript",
   "license": "Apache-2.0 OR MIT",
   "homepage": "https://github.com/achingbrain/weald#readme",
@@ -31,13 +31,6 @@
     ".": {
       "types": "./dist/src/index.d.ts",
       "import": "./dist/src/index.js"
-    }
-  },
-  "eslintConfig": {
-    "extends": "ipfs",
-    "parserOptions": {
-      "project": true,
-      "sourceType": "module"
     }
   },
   "release": {
@@ -122,7 +115,15 @@
       "@semantic-release/changelog",
       "@semantic-release/npm",
       "@semantic-release/github",
-      "@semantic-release/git"
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json"
+          ]
+        }
+      ]
     ]
   },
   "scripts": {
@@ -143,10 +144,10 @@
   },
   "dependencies": {
     "ms": "^3.0.0-canary.1",
-    "supports-color": "^9.4.0"
+    "supports-color": "^10.0.0"
   },
   "devDependencies": {
-    "aegir": "^44.0.1"
+    "aegir": "^47.0.21"
   },
   "browser": {
     "./dist/src/node.js": "./dist/src/browser.js"
