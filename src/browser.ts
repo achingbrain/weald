@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
-/* eslint-disable @typescript-eslint/restrict-plus-operands */
-/* eslint-disable @typescript-eslint/strict-boolean-expressions */
+
 /* eslint-env browser */
 
 /**
