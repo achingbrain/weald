@@ -1,3 +1,9 @@
+## [1.0.6](https://github.com/achingbrain/weald/compare/v1.0.5...v1.0.6) (2025-08-27)
+
+### Dependencies
+
+* **dev:** bump aegir from 44.1.4 to 45.0.8 ([#6](https://github.com/achingbrain/weald/issues/6)) ([50804dc](https://github.com/achingbrain/weald/commit/50804dc6712727d5f8ba9351db59515985246303))
+
 ## [1.0.5](https://github.com/achingbrain/weald/compare/v1.0.4...v1.0.5) (2025-08-27)
 
 ### Dependencies
