@@ -5,7 +5,7 @@
  * This is the common logic for both the Node.js and web browser
  * implementations of `debug()`.
  */
-import humanize from 'ms'
+import * as humanize from 'ms'
 import type { Debug, Debugger } from './index.js'
 
 export default function setup (env: any): Debug {
