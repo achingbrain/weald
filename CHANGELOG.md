@@ -1,3 +1,9 @@
+## [1.0.5](https://github.com/achingbrain/weald/compare/v1.0.4...v1.0.5) (2025-08-27)
+
+### Dependencies
+
+* bump supports-color from 9.4.0 to 10.0.0 ([#7](https://github.com/achingbrain/weald/issues/7)) ([c428734](https://github.com/achingbrain/weald/commit/c428734491b919480a79ae13a579e36bba8e4450))
+
 ## [1.0.4](https://github.com/achingbrain/weald/compare/v1.0.3...v1.0.4) (2024-10-07)
 
 ### Bug Fixes
