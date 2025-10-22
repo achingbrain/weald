@@ -1,3 +1,13 @@
+## [1.1.0](https://github.com/achingbrain/weald/compare/v1.0.6...v1.1.0) (2025-10-22)
+
+### Features
+
+* allow redirecting logs ([#12](https://github.com/achingbrain/weald/issues/12)) ([f1472cf](https://github.com/achingbrain/weald/commit/f1472cf4dfccb8603aeb707a48bcd5c2c0b18aaf))
+
+### Trivial Changes
+
+* bump aegir from 44.1.4 to 47.0.21 ([#9](https://github.com/achingbrain/weald/issues/9)) ([dbe1abc](https://github.com/achingbrain/weald/commit/dbe1abc4c84d37c3994126b064380a15fac2fa46))
+
 ## [1.0.6](https://github.com/achingbrain/weald/compare/v1.0.5...v1.0.6) (2025-08-27)
 
 ### Dependencies
