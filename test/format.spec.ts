@@ -56,4 +56,9 @@ describe('format', function () {
     const res = format('%%s', 'foo')
     expect(res).to.equal('%s foo')
   })
+
+  it('should ignore unknown format', () => {
+    const res = format('%h', 'foo')
+    expect(res).to.equal('%h foo')
+  })
 })
