@@ -5,7 +5,7 @@
  * implementations of `debug()`.
  */
 import humanize from 'ms'
-import type { Debug, Debugger } from './index.js'
+import type { Debug, Debugger, Options } from './index.js'
 
 export default function setup (env: any): Debug {
   createDebug.debug = createDebug
@@ -61,7 +61,7 @@ export default function setup (env: any): Debug {
    * @param {string} namespace
    * @returns {Function}
    */
-  function createDebug (namespace: string): Debugger {
+  function createDebug (namespace: string, options?: Options): Debugger {
     let prevTime: any
     let enableOverride: any = null
     let namespacesCache: any
@@ -116,9 +116,13 @@ export default function setup (env: any): Debug {
       // @ts-expect-error formatArgs is not in the types
       createDebug.formatArgs.call(self, args)
 
-      // @ts-expect-error log is not in the types
-      const logFn = self.log || createDebug.log
-      logFn.apply(self, args)
+      if (options?.onLog != null) {
+        options.onLog(...args)
+      } else {
+        // @ts-expect-error log is not in the types
+        const logFn = self.log || createDebug.log
+        logFn.apply(self, args)
+      }
     }
 
     debug.namespace = namespace

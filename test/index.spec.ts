@@ -138,4 +138,17 @@ describe('debug', () => {
       expect(messages).to.deep.equal(['test2', 'test3'])
     })
   })
+
+  it('collects logs', () => {
+    const logged: Array<any[]> = []
+    const log = debug('test', {
+      onLog: (...log) => {
+        logged.push([...log])
+      }
+    })
+    log.enabled = true
+    log('hello %s %j', 'world', { foo: 1 })
+
+    expect(logged).to.not.be.empty()
+  })
 })
