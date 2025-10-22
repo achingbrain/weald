@@ -16,8 +16,34 @@
 import weald from './node.js'
 import type ms from 'ms'
 
+export interface Options {
+  /**
+   * Receives log lines. The default transport writes the log line to
+   * `process.stderr`, `console.debug` or `console.log` depending on what is
+   * available in the environment.
+   *
+   * The args are not formatted - they can be passed to `util.format` from
+   * Node.js or to `format` exported from this module as `weald/format`.
+   *
+   * @example Receiving log lines
+   *
+   * ```ts
+   * import debug from 'weald'
+   * import { format } from 'weald/format'
+   *
+   * const logger = debug('my-namespace', {
+   *   onLog (...args: any[]) {
+   *     const line = format(...args)
+   *     // do something with `line`
+   *   }
+   * })
+   * ```
+   */
+  onLog?(...args: any[]): void
+}
+
 export interface Debug {
-  (namespace: string): Debugger
+  (namespace: string, options?: Options): Debugger
   coerce(val: any): any
   disable(...args: string[]): string
   enable(namespaces: string | boolean): void
@@ -26,6 +52,7 @@ export interface Debug {
   log(...args: any[]): any
   selectColor(namespace: string): string | number
   humanize: typeof ms
+  useColors(): boolean
 
   names: RegExp[]
   skips: RegExp[]
@@ -52,6 +79,7 @@ export interface Debugger {
   namespace: string
   destroy(): boolean
   extend(namespace: string, delimiter?: string): Debugger
+  useColors(): boolean
 }
 
 export default weald

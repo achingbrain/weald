@@ -31,6 +31,10 @@
     ".": {
       "types": "./dist/src/index.d.ts",
       "import": "./dist/src/index.js"
+    },
+    "./format": {
+      "types": "./dist/src/format.d.ts",
+      "import": "./dist/src/format.js"
     }
   },
   "release": {
