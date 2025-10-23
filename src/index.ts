@@ -49,7 +49,7 @@ export interface Debug {
   enable(namespaces: string | boolean): void
   enabled(namespaces: string): boolean
   formatArgs(this: Debugger, args: any[]): void
-  log(...args: any[]): any
+  log(fmt: string, ...args: any[]): unknown
   selectColor(namespace: string): string | number
   humanize: typeof ms
   useColors(): boolean
@@ -75,7 +75,7 @@ export interface Debugger {
   color: string
   diff: number
   enabled: boolean
-  log(...args: any[]): any
+  log(fmt: string, ...args: any[]): unknown
   namespace: string
   destroy(): boolean
   extend(namespace: string, delimiter?: string): Debugger
