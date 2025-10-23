@@ -118,11 +118,11 @@ export default function setup (env: any): Debug {
 
       if (options?.onLog != null) {
         options.onLog(...args)
-      } else {
-        // @ts-expect-error log is not in the types
-        const logFn = self.log || createDebug.log
-        logFn.apply(self, args)
       }
+
+      // @ts-expect-error log is not in the types
+      const logFn = self.log || createDebug.log
+      logFn.apply(self, args)
     }
 
     debug.namespace = namespace

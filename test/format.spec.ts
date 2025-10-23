@@ -39,7 +39,7 @@ describe('format', function () {
 
   it('should format object string (%o)', () => {
     const res = format('%o', 'foo')
-    expect(res).to.equal('foo')
+    expect(res).to.equal('"foo"')
   })
 
   it('should format error (%o)', () => {

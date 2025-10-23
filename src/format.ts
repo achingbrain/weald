@@ -15,11 +15,12 @@ export function format (...params: any[]): string {
 
       switch (flag) {
         case 'o':
-          if (Array.isArray(arg)) {
-            arg = JSON.stringify(arg)
+          if (arg instanceof Error) {
+            arg = arg.toString()
           } else {
-            arg = `${arg}`
+            arg = JSON.stringify(arg)
           }
+
           break
         case 's':
           arg = `${arg}`
