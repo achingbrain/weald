@@ -151,7 +151,7 @@
     "supports-color": "^10.0.0"
   },
   "devDependencies": {
-    "aegir": "^47.0.21"
+    "aegir": "^48.0.1"
   },
   "browser": {
     "./dist/src/node.js": "./dist/src/browser.js"
