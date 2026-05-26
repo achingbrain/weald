@@ -1,3 +1,9 @@
+## [1.1.2](https://github.com/achingbrain/weald/compare/v1.1.1...v1.1.2) (2026-05-26)
+
+### Bug Fixes
+
+* bump aegir from 47.2.0 to 48.0.6 and support require ([#16](https://github.com/achingbrain/weald/issues/16)) ([5a6d08b](https://github.com/achingbrain/weald/commit/5a6d08b25692ddf7d5113c5c8c5f0eaf51c55e71))
+
 ## [1.1.1](https://github.com/achingbrain/weald/compare/v1.1.0...v1.1.1) (2025-10-23)
 
 ### Bug Fixes
