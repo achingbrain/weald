@@ -1,3 +1,9 @@
+## [1.1.3](https://github.com/achingbrain/weald/compare/v1.1.2...v1.1.3) (2026-05-26)
+
+### Dependencies
+
+* bump ms from 3.0.0-canary to 4.0.0-nightly ([#11](https://github.com/achingbrain/weald/issues/11)) ([3cde017](https://github.com/achingbrain/weald/commit/3cde0172ebfac1fa1d422490e9793b3ee416a6e0))
+
 ## [1.1.2](https://github.com/achingbrain/weald/compare/v1.1.1...v1.1.2) (2026-05-26)
 
 ### Bug Fixes
