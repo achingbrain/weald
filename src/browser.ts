@@ -5,7 +5,7 @@
 /**
  * This is the web browser implementation of `debug()`.
  */
-import humanize from 'ms'
+import { ms as humanize } from 'ms'
 import setup from './common.ts'
 
 const storage = localstorage()
