@@ -149,12 +149,13 @@
     ]
   },
   "scripts": {
+    "build": "aegir build",
     "clean": "aegir clean",
     "lint": "aegir lint",
-    "docs": "aegir docs",
     "dep-check": "aegir dep-check",
     "doc-check": "aegir doc-check",
-    "build": "aegir build",
+    "spell-check": "aegir spell-check",
+    "docs": "aegir docs",
     "test": "aegir test",
     "test:chrome": "aegir test -t browser --cov",
     "test:chrome-webworker": "aegir test -t webworker",
@@ -162,6 +163,7 @@
     "test:firefox-webworker": "aegir test -t webworker -- --browser firefox",
     "test:node": "aegir test -t node --cov",
     "test:electron-main": "aegir test -t electron-main",
+    "test:deno": "aegir test -t deno",
     "release": "aegir release"
   },
   "dependencies": {
@@ -175,7 +177,7 @@
     "./dist/src/node.js": "./dist/src/browser.js"
   },
   "react-native": {
-    "./dist/src/node.js": "./dist/src/browser.js"
+    "./src/node.ts": "./src/browser.ts"
   },
   "sideEffects": false
 }

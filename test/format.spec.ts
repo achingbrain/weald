@@ -1,5 +1,5 @@
 import { expect } from 'aegir/chai'
-import { format } from '../src/format.js'
+import { format } from '../src/format.ts'
 
 describe('format', function () {
   it('should use format string', () => {
