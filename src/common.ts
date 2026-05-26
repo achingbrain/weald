@@ -5,7 +5,7 @@
  * implementations of `debug()`.
  */
 import humanize from 'ms'
-import type { Debug, Debugger, Options } from './index.js'
+import type { Debug, Debugger, Options } from './index.ts'
 
 export default function setup (env: any): Debug {
   createDebug.debug = createDebug

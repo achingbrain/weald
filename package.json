@@ -21,6 +21,22 @@
   ],
   "type": "module",
   "types": "./dist/src/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "*",
+        "dist/*",
+        "dist/src/*",
+        "dist/src/*/index"
+      ],
+      "src/*": [
+        "*",
+        "dist/*",
+        "dist/src/*",
+        "dist/src/*/index"
+      ]
+    }
+  },
   "files": [
     "src",
     "dist",
@@ -30,11 +46,13 @@
   "exports": {
     ".": {
       "types": "./dist/src/index.d.ts",
-      "import": "./dist/src/index.js"
+      "import": "./dist/src/index.js",
+      "module-sync": "./dist/src/index.js"
     },
     "./format": {
       "types": "./dist/src/format.d.ts",
-      "import": "./dist/src/format.js"
+      "import": "./dist/src/format.js",
+      "module-sync": "./dist/src/format.js"
     }
   },
   "release": {
@@ -131,12 +149,13 @@
     ]
   },
   "scripts": {
+    "build": "aegir build",
     "clean": "aegir clean",
     "lint": "aegir lint",
-    "docs": "aegir docs",
     "dep-check": "aegir dep-check",
     "doc-check": "aegir doc-check",
-    "build": "aegir build",
+    "spell-check": "aegir spell-check",
+    "docs": "aegir docs",
     "test": "aegir test",
     "test:chrome": "aegir test -t browser --cov",
     "test:chrome-webworker": "aegir test -t webworker",
@@ -144,6 +163,7 @@
     "test:firefox-webworker": "aegir test -t webworker -- --browser firefox",
     "test:node": "aegir test -t node --cov",
     "test:electron-main": "aegir test -t electron-main",
+    "test:deno": "aegir test -t deno",
     "release": "aegir release"
   },
   "dependencies": {
@@ -151,13 +171,13 @@
     "supports-color": "^10.0.0"
   },
   "devDependencies": {
-    "aegir": "^47.0.21"
+    "aegir": "^48.0.6"
   },
   "browser": {
     "./dist/src/node.js": "./dist/src/browser.js"
   },
   "react-native": {
-    "./dist/src/node.js": "./dist/src/browser.js"
+    "./src/node.ts": "./src/browser.ts"
   },
   "sideEffects": false
 }
