@@ -18,7 +18,7 @@ import tty from 'node:tty'
 import util from 'node:util'
 import humanize from 'ms'
 import supportsColor from 'supports-color'
-import setup from './common.js'
+import setup from './common.ts'
 
 /**
  * This is the Node.js implementation of `debug()`.

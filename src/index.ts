@@ -13,7 +13,7 @@
 /**
  * Module dependencies.
  */
-import weald from './node.js'
+import weald from './node.ts'
 import type ms from 'ms'
 
 export interface Options {

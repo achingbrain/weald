@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 import { expect } from 'aegir/chai'
-import debug from '../src/index.js'
+import debug from '../src/index.ts'
 
 describe('debug', () => {
   it('passes a basic sanity check', () => {
