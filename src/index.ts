@@ -14,7 +14,7 @@
  * Module dependencies.
  */
 import weald from './node.ts'
-import type ms from 'ms'
+import type { ms } from 'ms'
 
 export interface Options {
   /**
