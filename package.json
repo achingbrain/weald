@@ -168,7 +168,7 @@
   },
   "dependencies": {
     "ms": "^4.0.0-nightly.202508271359",
-    "supports-color": "^10.0.0"
+    "supports-color": "^11.0.0"
   },
   "devDependencies": {
     "aegir": "^48.0.6"
